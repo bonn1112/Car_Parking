@@ -7,28 +7,13 @@ class ParkingSlot(object):
         # this car is parking specific number
         self.car = None
         self.slot_number = slot_number
-        self._is_available = is_available
+        self.is_available = is_available
 
-    @property
-    def car(self):
-        return self._car
-
-    @car.setter
     def car(self, value):
-        self._car = value
+        self.car = value
 
-    @property
-    def slot_number(self):
-        return self._slot_number
-
-    @slot_number.setter
     def slot_number(self, value):
-        self._slot_number = value
+        self.slot_number = value
 
-    @property
-    def is_available(self):
-        return self._is_available
-
-    @is_available.setter
     def is_available(self, value):
-        self._is_available = value
+        self.is_available = value

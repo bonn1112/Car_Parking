@@ -4,24 +4,14 @@ class Car(object):
     """
 
     def __init__(self):
-        self._registration_number = None
-        self._colour = None
+        self.registration_number = None
+        self.colour = None
 
-    @property
-    def registration_number(self):
-        return self._registration_number
-
-    @registration_number.setter
     def registration_number(self, value):
-        self._registration_number = value
+        self.registration_number = value
 
-    @property
-    def colour(self):
-        return self._colour
-
-    @colour.setter
     def colour(self, value):
-        self._colour = value
+        self.colour = value
 
     @classmethod
     def create(cls, registration_number, colour):
